@@ -40,7 +40,7 @@ function numero() {
         i++
 
     }
-    console.log("La somma di tutti i numeri inseriti è: " , somma);
+    console.log("La somma di tutti i numeri inseriti è: ", somma);
 
 }
 
@@ -52,3 +52,60 @@ function numero() {
 // Ogni volta che ne crei uno, stampalo.
 
 
+function numero() {
+
+    let n = parseInt(prompt('Inserisci un numero'))
+    i = 0;
+
+    while (i < n) {
+
+        let array = [];
+
+        while (array.length < 10) {
+
+            let randomNumber = Math.floor(Math.random() * 100);
+            array.push(randomNumber);
+
+        }
+
+        console.log(array)
+
+        i++;
+    }
+}
+
+
+// *Snack4 (Bonus)*
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, 
+// chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+// Interrompi il ciclo appena il nome è stato trovato.
+
+
+
+
+function nome() {
+
+    let names = ['andrea', 'marco', 'giovanni', 'luca']
+
+    let name = prompt('Inserisci il tuo nome ?')
+
+    let i = 0;
+
+    while (i < names.length) {
+
+        if (name == names[i]) {
+            console.log('sei stato invitato');
+            break;
+
+        }
+
+        else{
+
+            console.log('non sei stato invitato');
+        }
+
+        i++
+
+    }
+
+}
